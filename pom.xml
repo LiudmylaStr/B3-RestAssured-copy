@@ -5,15 +5,15 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>io.loopcamp</groupId>
-    <artifactId>RestAssured</artifactId>
+    <artifactId>B3-RestAssured</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+<!--        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>-->
     </properties>
-    
+
     <build>
         <plugins>
             <plugin>
@@ -57,6 +57,7 @@
             <version>5.1.1</version>
             <scope>test</scope>
         </dependency>
+
         <!--        jackson is used for parsing json-->
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
