@@ -17,8 +17,21 @@ public class HelloWorldApiTest {
         Response response = RestAssured.get(url);
 
         response.prettyPrint();
+        System.out.println(response.statusCode());
+        System.out.println(response.statusLine());
+        // assert/validate/verify that RESPONSE STATUS CODE is 200
+        Assertions.assertEquals(200, response.statusCode(), "Did not match");
+
+        // We can also assign the RESPONSE STATUS CODE into a variable and use it.
+        int actualStatusCode = response.statusCode();
+        Assertions.assertEquals(200, actualStatusCode, "Did not match");
 
 
+        // asString(); method will return the RESPONSE BODY as a String
+        String actualResponseBody = response.asString();
+
+        // Here we validated that the RESPONSE BODY contains our expected text (Hello World!)
+        Assertions.assertTrue(actualResponseBody.contains("Hello World!"));
     }
 
 }
