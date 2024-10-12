@@ -48,7 +48,7 @@ public class MinionXmlPathTest extends MinionApiTestBase {
         assertEquals(1, xmlPath.getInt( "List.item[0].id"));
         assertEquals("Male", xmlPath.getString("List.item[0].gender"));
         assertEquals("Meade", xmlPath.getString( "List.item[0].name"));
-        assertEquals("9994128234", xmlPath.getString("List.item[0].phone"));
+        assertEquals("9994128238", xmlPath.getString("List.item[0].phone"));
 
 
         // how to get all names
